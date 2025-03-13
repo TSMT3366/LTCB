@@ -21,6 +21,6 @@ int main()
     {
         S += 1/(float)i;
     }
-    printf("S = 1 + 1/2 + 1/3 + ... + 1/N = %lf\n", S);
+    printf("S = 1 + 1/2 + 1/3 + ... + 1/%d = %lf\n", a, S);
     return 0;
 }
