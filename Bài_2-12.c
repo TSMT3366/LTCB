@@ -29,7 +29,7 @@ void bai_12 (double x, double esp)
             k *= j;
         }
         n = pow(-1,i) * ((pow(x, 2*i+1))/k);
-        Sin = Sin + pow(-1,i) * ((pow(x, 2*i+1))/k);
+        Sin += n;
         i++;
     }
     while (n>esp);
