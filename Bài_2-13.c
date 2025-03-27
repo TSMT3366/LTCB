@@ -12,7 +12,7 @@ void input (double *a, double *b)
     while(*b < 0)
     {
         printf("\nGia tri esp khong hop le.\nVui long nhap lai: ");
-        scanf("%d", b);
+        scanf("%lf", b);
     }
 }
 
