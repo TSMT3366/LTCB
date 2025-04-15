@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <malloc.h>
 #define LEN 10
 
-void nhap_MT (int a[])
+void nhap_MT (int *a)
 {
     for (int i=0; i<LEN; i++)
     {
@@ -10,7 +11,7 @@ void nhap_MT (int a[])
     }
 }
 
-void min_max_value (int a[])
+void min_max_value (int *a)
 {
     int i, max = a[1], min = a[1];
     for (i=0; i<LEN; i++)
@@ -31,7 +32,7 @@ void min_max_value (int a[])
 
 int main()
 {
-    int a[LEN];
+    int *a = (int*)malloc(LEN*sizeof(int));
     printf ("Nhap 10 gia tri bat ky vao mang:\n");
     nhap_MT(a);
     min_max_value(a);
