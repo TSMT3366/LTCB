@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void in_MT (int a[])
+void in_MT (int *a)
 {
     for (int i=0; i<10; i++)
     {
@@ -11,6 +11,6 @@ void in_MT (int a[])
 int main()
 {
     int A[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    in_MT(A);
+    in_MT(&A);
     return 0;
 }
